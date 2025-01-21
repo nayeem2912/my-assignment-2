@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* *{ 
-    border: 1px solid red;
-}
-body{
-    border: 2px solid green;}  */
 .navbar{
  max-width:1440px;
 margin: 0px auto;
@@ -361,8 +356,77 @@ font-size: 1.25rem;
 font-weight: 700;
 text-align: center;
 padding: 10px 40px;
-margin: 80px 600px 0px 600px;
+margin: 80px 600px 50px 600px;
 }
+.footer{
+    max-width: 1440px;
+    height: 519px;
+    margin: 0px auto;
+    background: rgb(1, 172, 253);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.kid{
+    display: flex;
+    flex-direction: row;
+    margin-top: -60px;
+}
+.kid img{
+    margin-top: 53px;
+    margin-right: 10px;
+}
+.kid h4{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 2.633rem;
+text-align: left;
+}
+.education p{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: -10px;
+}
+.about h3{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.5rem;
+font-weight: 700;
+text-align: left;
+
+}
+.about li{
+    list-style: none;
+    margin: 20px 0px;
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size:1.25rem;
+font-weight: 500;
+text-align: left;
+margin-left: -40px;
+}
+.touch h3{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.625rem;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: -100px;
+}
+
+
+
+
+
+
+
 @media screen and (max-width:576px) {
     .name,
     .nav-link{
@@ -405,7 +469,22 @@ border: 0.5px solid rgb(254, 163, 1);
        grid-template-columns: repeat(2,291px);
     }
     .view{
-      margin: 100px 200px 0px 150px;
+      margin: 100px 200px 50px 150px;
+    }
+    .footer{
+        height: 700px;
+        flex-direction: column;
+    gap: 50px;
+    }
+    .education{
+        margin-left: -100px;
+    }
+    .about{
+        margin-top: -120px;
+        margin-left: -320px;
+    }
+    .touch{
+        margin-left: -300px;
     }
 }
 
