@@ -31,6 +31,10 @@ font-weight: 600;
 line-height: 30px;
 letter-spacing: 0%;
 text-align: center;
+border: none;
+}
+.menu button:hover{
+    background-color: aqua;
 }
 .menu-img{
     display: none;
@@ -103,6 +107,9 @@ margin-top: 24px;
 padding: 20px;
 border: none;
 }
+.banner-container button:hover{
+    background-color: aqua;
+}
 .banner-img{
 width: 100%;
 }
@@ -124,7 +131,7 @@ text-align: center;
     gap: 50px;
 }
 .kinder{
-    width: 367.8px;
+    max-width: 367.8px;
     height: 476.78px;
     margin-left: 10px;
     box-sizing: border-box;
@@ -160,7 +167,7 @@ text-align: center;
 margin-top: 50px;
 }
 .elementary{
-    width: 367.8px;
+    max-width: 367.8px;
     margin-left: 10px;
     box-sizing: border-box;
 border: 0.94px solid rgb(255, 244, 220);
@@ -195,7 +202,7 @@ text-align: center;
 margin-top: 50px;
 }
 .middle{
-    width: 367.8px;
+    max-width: 367.8px;
     box-sizing: border-box;
     margin-left: 10px;
 border: 0.94px solid rgb(242, 232, 255);
@@ -267,14 +274,14 @@ text-align: center;
 }
 .box{
     max-width: 576px;
-    height: 576px;
+    min-height: 576px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 .box-1{
     max-width: 290.69px;
-height: 301.61px;
+ min-height: 301.61px;
 background: rgb(255, 255, 255);
 }
 .box-2{
@@ -319,6 +326,7 @@ text-align: left;
 margin-left: 40px;
 }
 .date-2{
+    position: relative;
     max-width: 174.51px;
 height: 38.35px;
 color: rgb(255, 255, 255);
@@ -329,11 +337,12 @@ text-align: center;
 padding: 10px 15px;
 border-radius: 47.93px;
 background: rgb(149, 178, 38);
-margin: -900px 0px -100px 38px;
+margin: -200px 0px -200px 38px;
 border: none;
 }
 .image{
     border-radius: 16px 16px 0px 0px;
+    position: relative;
 }
 .h4{
     color: rgb(0, 0, 0);
@@ -356,17 +365,10 @@ border-radius: 12px;
 background: rgb(17, 17, 17);
 margin-top: 24px;
 padding: 20px;
-    /* max-width: 197px;
-    height: 50px;
-    border-radius: 12px;
-    background: rgb(17, 17, 17);
-    color: rgb(255, 255, 255);
-font-family: Quicksand;
-font-size: 1.25rem;
-font-weight: 700;
-text-align: center;
-padding: 10px 40px; */
 margin: 80px 600px 50px 600px;
+}
+.view:hover{
+    background-color: aqua;
 }
 .footer{
     max-width: 1440px;
@@ -385,6 +387,7 @@ margin: 80px 600px 50px 600px;
 .kid img{
     margin-top: 53px;
     margin-right: 10px;
+    background-color: antiquewhite;
 }
 .kid h4{
     color: rgb(255, 255, 255);
@@ -430,7 +433,13 @@ letter-spacing: 0%;
 text-align: left;
 margin-top: -100px;
 }
-
+.marquee{
+    max-width: 1440px;
+    margin: 0px auto;
+    font-size: 2rem;
+    color: black;
+    background-color: aquamarine;
+}
 
 
 
@@ -458,9 +467,7 @@ border: 0.5px solid rgb(254, 163, 1);
     .banner-container{
         text-align: center;
     }
-    .small{
-   
-    }
+    
     .curriculum-item{
         grid-template-columns: repeat(1,1fr);
         /* margin: 0 80px; */
@@ -473,13 +480,18 @@ border: 0.5px solid rgb(254, 163, 1);
         display: none;
     }
     .box{
-        margin-left: -150px;
-       width: 100%;
+        margin-left: -120px;
        gap: 5px;
-       grid-template-columns: repeat(2,291px);
     }
+     .box-1{
+
+        max-width:260px ;
+     }
+     .image{
+        max-width: 260px;
+     }
     .view{
-      margin: 100px 200px 50px 150px;
+      margin: 100px 200px 50px 180px;
     }
     .footer{
         height: 700px;
@@ -489,13 +501,86 @@ border: 0.5px solid rgb(254, 163, 1);
     .education{
         margin-left: 20px;
     }
+    .education p{
+        margin-top: -15px;
+    }
     .about{
         margin-top: -120px;
-        margin-left: -200px;
-    }
-    .touch{
         margin-left: -170px;
     }
+    .touch{
+        margin-left: -150px;
+    }
+    .kinder,.elementary,.middle{
+        margin-left: 100px;
+    }
+    .date-2{
+        margin: 0px;
+        margin-top: -200px;
+        margin-left: 10px;
+    }
+    .h4{
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:428px) {
+    .kinder,.elementary,.middle{
+        margin-left: 15px;
+    }
+    .view{
+        margin: 100px 200px 50px 105px;
+      }
+      .box{
+        gap: 20px;
+      }
+      .box-1{
+        max-width: 190px;
+        margin-left: -12px;
+        
+      }
+      .image{
+        max-width: 190px;
+      }
+}
+@media screen and (max-width:382px) {
+    
+    .view{
+        margin: 100px 200px 50px 80px;
+      }
+    .middle{
+        margin-left: -2px;
+    }
+    .kinder,.elementary{
+        margin-left: -4px;
+    }
+    .kinder, .elementary ,.middle{
+        max-width: 350px;
+    }
+    .kinder img{
+        padding: 60px 100px 0px 120px;
+    }
+    .elementary img{
+        padding: 60px 100px 0px 120px;
+    }
+    .middle img{
+        padding: 60px 100px 0px 120px;
+    }
+    .box{
+        gap: 20px;
+      }
+      .box-1{
+        max-width: 170px;
+        margin-left: -12px;
+        
+      }
+      .image{
+        max-width: 170px;
+      }
+      .date-2{
+       font-size: 0.6rem;
+      }
 }
 
 
