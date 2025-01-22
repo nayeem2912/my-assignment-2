@@ -270,7 +270,7 @@ text-align: center;
 .classroom{
     max-width: 540.27px;
     height: 622.4px;
-
+  
 }
 .box{
     max-width: 576px;
@@ -289,6 +289,7 @@ background: rgb(255, 255, 255);
 }
 .classroom{
     background: rgb(255, 255, 255);
+    margin-right: 20px;
 }
 .classroom img{
     border-radius: 16px 16px 0px 0px;
@@ -480,11 +481,11 @@ border: 0.5px solid rgb(254, 163, 1);
         display: none;
     }
     .box{
-        margin-left: -120px;
+        margin-left: -110px;
        gap: 5px;
     }
      .box-1{
-
+          
         max-width:260px ;
      }
      .image{
@@ -540,7 +541,7 @@ border: 0.5px solid rgb(254, 163, 1);
       }
       .box-1{
         max-width: 190px;
-        margin-left: -12px;
+        margin-left: -10px;
         
       }
       .image{
@@ -577,7 +578,7 @@ border: 0.5px solid rgb(254, 163, 1);
       }
       .box-1{
         max-width: 170px;
-        margin-left: -12px;
+        margin-left: -11px;
         
       }
       .image{
